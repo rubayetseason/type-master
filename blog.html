@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speed Monster | Blog</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -16,7 +18,67 @@
     </div>
 
 
+    <section class="container">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-secondary  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Difference between Local Storage and Session Storage?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">The major difference between localStorage and sessionStorage is the expiration date.
+
+                    LocalStorage persists the storage across browser sessions. So even if the domain is opened in a new tab, or the browser is closed and reopened, the storage is saved. There is no expiration.
+                    SessionStorage, one the other hand, is cleared when the page session ends. A page session lasts as long as the tab or the browser is open. Therefore, when you open a new tab or a new window, this creates a new session and new storage.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed bg-secondary  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Difference between Global Scope and Block Scope
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">A variable's scope is the range of the script where it is visible. Variables have either global or local scope. A global variable exists only once in a script, and is visible in every function. Modifications to it in one function are permanent and visible to all functions. Unless declared otherwise, all variables in a script are global. Global variables are useful for values that are relatively constant, or that many functions in the script must access, such as a session id. A local variable, however, has a limited scope: it exists only within the block that it is declared in. Once that block ends, the variable is destroyed and its values lost. A local variable of the same name declared elsewhere is a different variable. A local variable can even exist multiple times simultaneously, if its block is entered again before it's exited - i.e. a recursive function call. Each call of the function will have a distinct local variable.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed bg-secondary  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  What is JavaScript Event Loop?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">The event loop is what allows javascript to handle thousands and thousands of requests with just a single thread. This architecture allows Javascript and/or Node.js engines to offload operations to the system kernel. The event loop is an architectural design pattern that allows code to run asynchronously on the javascript engines and makes it possible for code to execute blocking instructions first and when available execute asynchronous functions. The event loop utilizes three major components, Call Stack, Event Queue, and WebAPIs/C++ APIs. It manages function calls in a way that asynchronous events would go into the event queue and will be called only after the call stack is empty.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  What are the types of undefined in JavaScript?
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">JavaScript provides some primitive as well as non-primitive data types. For example “null”, “boolean”, “undefined”, etc. belong to the primitive data type while “arrays”, and “objects” are non-primitive or complex data types.  In JavaScript, any variable that is not assigned with any value has a default value of “undefined”.
+                    We can get 8 types of undefined in JavaScript. <br>
+1. If any variarble is not initialized
+2. If any function has no return
+3. If a parameter is not passed
+4. If return value is not precisely defined
+5. Calling an object property that doesn't exists
+6. Calling an array element that doesn't exist length wise
+7. deleting an item inside of an array
+8. setting a value as undefined
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
     <script src="blog.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
