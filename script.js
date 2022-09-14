@@ -70,7 +70,7 @@ const gameOver = () => {
   const finishTime = new Date().getTime();
   const timeTaken = (finishTime - startTime) / 1000;
   // turns the decimal history value to integar
-const timeTakenInIntegar = parseInt(timeTaken);
+  const timeTakenInIntegar = parseInt(timeTaken);
   // show result modal
   resultModal.innerHTML = "";
   resultModal.classList.toggle("hidden");
@@ -139,3 +139,8 @@ setInterval(() => {
 
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
 }, 1000);
+
+
+document.getElementById('blog').addEventListener('click', function () {
+  window.location.href = 'blog.html';
+});
